@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --nav-background: #55C278;
+    --container-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80vh;
+    
+}
+
+nav {
+    display: flex;
+    /* flex-direction: row; */
+    /* position:fixed; */    
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-background);
+    border-bottom: 1px solid #119100;
+    
+}
+
+.nav-content {
+    display: flex;
+    /* flex-direction:row; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.nav-content .links {
+    list-style: none;
+    display: flex; 
+    /* flex-direction: row; */
+    column-gap: 20px;
+    margin-left: 30px;
+}
+
+.nav-content .links a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #119100;
+    font-weight: 500;
+}
+
+.nav-content .links a:hover {
+    text-decoration: underline;
+    color: #15b300;
+}
+
+.nav-logo img{
+    width: 50px;
+
+}
+
+/* Navbar Sing in - Sing */
+.aside-links ul {
+    display: flex;
+    /* flex-direction: row; */
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.aside-links ul a {
+    text-decoration: none;
+    color: #119100;
+    border: 1px solid #119100;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Index */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se movam em linha ou coluna conforme necessário */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
+    padding: 20px; /* Adiciona algum espaçamento ao redor */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    max-width: 600px; /* Define uma largura máxima para a seção de texto */
+}
+
+.content-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.content-text p {
+    font-size: 35px;
+    font-weight: 350;
+    margin: 10px 0;
+}
+
+/* Estilos para a imagem */
+.img-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    max-width: 100%;
+}
+
+.img-size {
+    width: 100%;
+    max-width: 350px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilização do botão */
+.button{
+    width: 100%;
+    font-weight: bold;
+    background-color: #55C278;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #34e025 4px 4px 0 0,#000 4px 4px 0 1px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.25rem; /* Font-size responsivo usando unidades rem */
+    line-height: 1.25rem;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
+    padding: 12px;
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+.button:hover{
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #34e025;
+    transition-delay: 0.1s;
+}
+
+
+/* Página de Chips */
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    max-width: 1200px; /* Limita a largura máxima do container */
+    margin: 0px auto; /* Centraliza o container horizontalmente e adiciona margem superior e inferior */
+    min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
+}
+
+.img-content1 {
+    background-color: #000;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 0px;
+    flex: 1 1 300px; /* Responsivo, ocupa o mínimo de 300px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-size1 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.content1 {
+    flex: 2 1 500px; /* Responsivo, ocupa o mínimo de 500px */
+    margin: 20px;
+}
+
+.content-text1 {
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #000;
+}
+
+.content-text1 p {
+    font-weight: 350;
+    font-size: 25px;
+}
+
+.content-text1 h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.button-align1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Página de Sobre nós */
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    max-width: 1200px; /* Limita a largura máxima do container */
+    margin: 0px auto; /* Centraliza o container horizontalmente e adiciona margem superior e inferior */
+    min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
+}
+
+.content-text2, .img-content2 {
+    flex: 1 1 45%;
+    min-width: 300px;
+    max-width: 900px;
+}
+
+.content-text2 {
+    background-color: #15b300;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 40px;
+}
+
+.content-text2 p {
+    font-size: 25px;
+    padding: 15px;
+    color: black;
+    font-weight: 500;
+}
+
+.content-text2 h1 {
+    font-size: 60px;
+    padding: 30px;
+    color: black;
+    font-weight: 1000;
+}
+
+.img-content2 {
+    display: contents;
+    justify-content: center; /* Centraliza horizontalmente as imagens */
+    align-items: center;     /* Centraliza verticalmente as imagens */
+    flex-wrap: wrap;
+}
+
+.img-size2 {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    display: inline-block;
+    padding: 15%;
+}
+
+
+
+
+/* Página de Contatos */
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
+}
+.content-text3{
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: #000;
+}
+
+
+/* Página de Sign in */
+.login-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.login-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    font-weight: bold;
+    background-color: #55C278;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #34e025 4px 4px 0 0, #000 4px 4px 0 1px;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
+}
+
+.button:hover {
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #34e025;
+}
+
+.links-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.links-login a {
+    color: #55C278;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.links-login a:hover {
+    text-decoration: underline;
+}
+
+/* Página de Sign up */
+.register-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.register-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    font-weight: bold;
+    background-color: #55C278;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #34e025 4px 4px 0 0, #000 4px 4px 0 1px;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
+}
+
+.button:hover {
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #34e025;
+}
+
+.links-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.links-register a {
+    color: #55C278;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.links-register a:hover {
+    text-decoration: underline;
+}
+
+
+/* Rodapé */
+.rodape {
+    background-color: #49940d;
+    color: white;
+    width: 100%;
+    font-size: 22px;
+    font-family: helvetica;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.rodape p {
+    margin-bottom: 5px;
+}
+
+.rodape-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3 {
+    flex-basis: 30%; /* Cada div ocupará 30% do espaço disponível */
+    padding: 15px;
+    margin: 10px;
+}
+
+.rodape-div-1-coluna, .rodape-div-2-coluna, .rodape-div-3-coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape span {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.icon-rodape img {
+    width: 12%; /* Define a largura das imagens */
+    height: 20%; /* Mantém a proporção da altura em relação à largura */
+    margin-right: 2px; /* Espaçamento entre a imagem e o texto */
+    vertical-align: middle; /* Alinha a imagem verticalmente com o texto */
+}
+
+.rodape-direitos {
+    background-color: black;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+/*Mobile-Responsive Navbar*/
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+    position: relative;
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .links {
+      position: fixed;
+      top: 0vh;
+      right: 0;
+      width: 38%;
+      height: 100%;
+      background: #55C278;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .links li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+    .img-content, .content {
+        flex: 1 1 100%; /* Ocupa 100% da largura da tela em dispositivos menores */
+        margin: 10px 0;
+    }
+
+      .content {
+        max-width: 90%; /* Ajusta a largura máxima para telas menores */
+    }
+
+    .content-text h1 {
+        font-size: 2rem; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .content-text p {
+        font-size: 20px; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .button {
+        font-size: 1rem; /* Reduz o tamanho da fonte do botão para telas menores */
+    }
+
+    .img-size {
+        max-width: 300px; /* Ajusta o tamanho máximo da imagem para telas menores */
+    }
+
+    .container1 {
+        height: auto;
+    }
+    .img-size2 {
+        max-width: 100%;
+        height: auto;
+    } 
+
+
+    .container2 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .content-text2, .img-content2 {
+        flex: 1 1 100%;
+        min-width: auto;
+        max-width: none;
+    }
+
+    .content-text2 {
+        margin: 10px auto;
+        padding: 30px;
+    }
+
+    .content-text2 p {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .content-text2 h1 {
+        font-size: 45px;
+        padding: 20px;
+    }
+
+    .img-size2 {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+  }
+  
+  .links.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  
+
+ /* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .img-content, .content {
+        flex: 1 1 100%; /* Ocupa 100% da largura da tela em dispositivos menores */
+        margin: 10px 0;
+    }
+
+    .img-size {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-text p {
+        font-size: 20px; /* Diminui o tamanho da fonte para melhor leitura em telas menores */
+    }
+
+    .container1{
+        height: auto;
+    }
+}
