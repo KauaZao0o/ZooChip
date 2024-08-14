@@ -271,19 +271,104 @@ nav {
 
 
 /* Página de Contatos */
-.container3{
+.container3 {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Centraliza verticalmente */
     min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
 }
-.content-text3{
+
+.content3-text {
     padding: 30px;
     border-radius: 10px;
     color: white;
     background-color: #000;
+    margin: 10px;
+    box-sizing: border-box;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
 
+.forms-contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.forms-contatos input[type="text"],
+.forms-contatos input[type="email"],
+.forms-contatos input[type="tel"],
+.forms-contatos textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.img-size3 {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    max-width: 450px; 
+}
+
+.img-content3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    margin: 10px;
+    flex-grow: 0.3; 
+    height: 100%; 
+}
+
+/* .img-content3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    max-width: 350px; 
+    height: auto;
+}
+
+.img-size3 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+} */
+
+.button3 {
+    width: 100%;
+    font-weight: bold;
+    background-color: #55C278;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #34e025 4px 4px 0 0, #000 4px 4px 0 1px;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
+}
+
+.button3:hover {
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #34e025;
+}
 
 /* Página de Sign in */
 .login-container {
@@ -565,14 +650,16 @@ nav {
         max-width: 300px; /* Ajusta o tamanho máximo da imagem para telas menores */
     }
 
+    /* Mobile - Chips */
     .container1 {
         height: auto;
     }
+
+    /* Mobile - Sobre nós */
     .img-size2 {
         max-width: 100%;
         height: auto;
     } 
-
 
     .container2 {
         flex-direction: column;
@@ -604,6 +691,16 @@ nav {
         width: 80px;
         height: 80px;
         margin-right: 10px;
+    }
+
+    /* Mobile - Contatatos */
+    .container3 {
+        flex-direction: column; /* Muda para layout de coluna em telas menores */
+        gap: 30px; /* Aumenta o espaço entre os elementos em telas menores */
+    }
+
+    .content3-text, .img-content3 {
+        max-width: 100%; /* Remover limite de largura em telas menores */
     }
   }
   
