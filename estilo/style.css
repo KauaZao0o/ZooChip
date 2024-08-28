@@ -233,8 +233,8 @@ body {
 .content-text2 {
     background-color: #15b300;
     border-radius: 10px;
-    margin: 20px;
-    padding: 40px;
+    margin: 30px;
+    padding: 10px;
 }
 
 .content-text2 p {
@@ -245,7 +245,7 @@ body {
 }
 
 .content-text2 h1 {
-    font-size: 60px;
+    font-size: 40px;
     padding: 30px;
     color: black;
     font-weight: 1000;
@@ -589,48 +589,48 @@ body {
 .mobile-menu {
     display: none;
     cursor: pointer;
-  }
-  
-  .mobile-menu div {
+}
+
+.mobile-menu div {
     width: 32px;
     height: 2px;
     background: #fff;
     margin: 8px;
     transition: 0.3s;
     position: relative;
-  }
-  
-  @media (max-width: 999px) {
+}
+
+@media (max-width: 999px) {
     body {
-      overflow-x: hidden;
+    overflow-x: hidden;
     }
     .links {
-      position: fixed;
-      top: 0vh;
-      right: 0;
-      width: 50%;
-      height: 100%;
-      background: #55C278;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
+    position: fixed;
+    top: 0vh;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #55C278;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
     }
     .links li {
-      margin-left: 0;
-      opacity: 0;
+    margin-left: 0;
+    opacity: 0;
     }
     .mobile-menu {
-      display: block;
+    display: block;
     }
     .img-content, .content {
         flex: 1 1 100%; /* Ocupa 100% da largura da tela em dispositivos menores */
         margin: 10px 0;
     }
 
-      .content {
+    .content {
         max-width: 90%; /* Ajusta a largura máxima para telas menores */
     }
 
@@ -700,37 +700,37 @@ body {
     .content3-text, .img-content3 {
         max-width: 100%; /* Remover limite de largura em telas menores */
     }
-  }
-  
-  .links.active {
+}
+
+.links.active {
     transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
+}
+
+@keyframes navLinkFade {
     from {
-      opacity: 0;
-      transform: translateX(50px);
+    opacity: 0;
+    transform: translateX(50px);
     }
     to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
     }
-  }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-  
+}
 
- /* Ajustes para telas menores */
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+/* Ajustes para telas menores */
 @media (max-width: 768px) {
     .img-content, .content {
         flex: 1 1 100%; /* Ocupa 100% da largura da tela em dispositivos menores */
