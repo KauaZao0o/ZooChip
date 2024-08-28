@@ -13,25 +13,22 @@
     font-weight: 300;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 80vh;
-    
-}
-
 nav {
     display: flex;
-    /* flex-direction: row; */
-    /* position:fixed; */    
     justify-content: space-between;
     align-items: center;
     background-color: var(--nav-background);
     border-bottom: 1px solid #119100;
-    position: fixed ;
-    top: 0;
+    position: fixed;
+    top: 0; /* Adiciona a posição fixa no topo da página */
     width: 100%;
+    z-index: 1000; /* Define um z-index alto para o navbar */
+    /* Ajuste a margem superior ou o padding do corpo, se necessário */
+}
+
+/* Ajuste o conteúdo da página para evitar que fique atrás do navbar */
+body {
+    margin-top: 60px; /* Ajuste o valor conforme necessário para o seu layout */
 }
 
 .nav-content {
@@ -255,21 +252,18 @@ nav {
 }
 
 .img-content2 {
-    display: contents;
-    justify-content: center; /* Centraliza horizontalmente as imagens */
-    align-items: center;     /* Centraliza verticalmente as imagens */
-    flex-wrap: wrap;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 .img-size2 {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-    display: inline-block;
-    padding: 15%;
+    width: 100px; 
+    height: 100px; 
+    margin-bottom: 20px; 
+    padding: 10%;
 }
-
-
 
 
 /* Página de Contatos */
@@ -661,43 +655,41 @@ nav {
         height: auto;
     }
 
+
     /* Mobile - Sobre nós */
-    .img-size2 {
-        max-width: 100%;
-        height: auto;
-    } 
-
-    .container2 {
-        flex-direction: column;
-        padding: 10px;
+    .img-content2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+        grid-template-rows: repeat(2, 1fr); /* Duas linhas iguais */
+        gap: 10px; /* Espaçamento entre as imagens */
+        justify-items: center; /* Centraliza as imagens horizontalmente */
+        align-items: center; /* Centraliza as imagens verticalmente */
+        height: 300px; /* Ajuste conforme necessário */
     }
 
-    .content-text2, .img-content2 {
-        flex: 1 1 100%;
-        min-width: auto;
-        max-width: none;
+    .img-content2 img {
+        width: 80px; /* Ajuste o tamanho conforme necessário */
+        height: 80px; /* Ajuste o tamanho conforme necessário */
+        object-fit: cover; /* Garante que a imagem preencha o espaço */
     }
 
-    .content-text2 {
-        margin: 10px auto;
-        padding: 30px;
+    .img-content2 img:nth-child(1) {
+        grid-column: 1; /* Coluna 1 */
+        grid-row: 2; /* Linha 2 */
+        align-self: end; /* Alinha a imagem na parte inferior */
     }
 
-    .content-text2 p {
-        font-size: 20px;
-        padding: 10px;
+    .img-content2 img:nth-child(2) {
+        grid-column: 2; /* Coluna 2 (centro) */
+        grid-row: 1; /* Linha 1 (superior) */
     }
 
-    .content-text2 h1 {
-        font-size: 45px;
-        padding: 20px;
+    .img-content2 img:nth-child(3) {
+        grid-column: 3; /* Coluna 3 */
+        grid-row: 2; /* Linha 2 */
+        align-self: end; /* Alinha a imagem na parte inferior */
     }
 
-    .img-size2 {
-        width: 80px;
-        height: 80px;
-        margin-right: 10px;
-    }
 
     /* Mobile - Contatatos */
     .container3 {
