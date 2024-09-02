@@ -600,6 +600,145 @@ body {
     position: relative;
 }
 
+/* -----------------------------------------------Arquivo home-menu---------------------------------------------------------- */
+.aside-perfil ul {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.aside-perfil ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #119100;
+    font-weight: 500;
+    padding: 4px;
+}
+
+.aside-perfil ul img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.right-sidebarHomeMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: green;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-sidebarHomeMenu .content {
+    text-align: center;
+    color: white;
+}
+
+.right-sidebarHomeMenu .section {
+    margin-bottom: 50px;
+}
+
+.image-buttonHomeMenu {
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 0; /* Remove o padding do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.image-buttonHomeMenu img {
+    width: 40%; /* Tamanho da imagem */
+    height: 50%; /* Tamanho da imagem */
+    display: block;
+    margin: 0 auto 10px; /* Centraliza a imagem e adiciona margem abaixo */
+    background-color: transparent; /* Garante que o fundo da imagem seja transparente */
+}
+
+/* Seus animais */
+.content-textHomeMenu{
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 400px;
+    transition: all 0.3s ease;
+  }
+  
+  .search-container:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .search-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  
+  .search-input {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    width: 80%;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-input::placeholder {
+    color: #aaa;
+  }
+  
+  .search-input:focus {
+    background-color: #f7f7f7;
+  }
+  
+  .search-button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover .button-icon {
+    opacity: 0.8;
+  }
+  
+  .button-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  
+  
+
+
+
+  
+  
+
+  
+
 @media (max-width: 999px) {
     body {
     overflow-x: hidden;
@@ -700,6 +839,28 @@ body {
     .content3-text, .img-content3 {
         max-width: 100%; /* Remover limite de largura em telas menores */
     }
+
+
+    /* -----------------------------------------------Arquivo home-menu---------------------------------------------------------- */
+    .image-buttonHomeMenu img {
+        width: 100px; /* Tamanho da imagem */
+        height: 100px; /* Tamanho da imagem */
+
+    }
+    .search-container {
+        width: 90%;
+        border-radius: 30px;
+      }
+    
+      .search-input {
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+    
+      .search-button {
+        padding: 10px;
+        border-radius: 0 30px 30px 0;
+      }
 }
 
 .links.active {
