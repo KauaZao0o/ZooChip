@@ -258,12 +258,23 @@ body {
     justify-content: center; 
 }
 
+.img-content2 p {
+    font-size: 20px; /* Ajusta o tamanho da fonte, se necessário */
+    font-weight: bold; /* Deixa o nome em negrito para destacar */
+    color: black; /* Define a cor do texto, se necessário */
+    height: 50px; 
+    margin-bottom: 20px; 
+    padding: 0%;
+}
+
+
 .img-size2 {
     width: 100px; 
     height: 100px; 
-    margin-bottom: 20px; 
-    padding: 10%;
+    margin-bottom: 10px; 
+    padding: 5%;
 }
+
 
 
 /* Página de Contatos */
@@ -319,7 +330,7 @@ body {
     width: 100%;
     height: 100%;       
     object-fit: cover; 
-    max-width: 450px; 
+    max-width: 500px; 
 }
 
 .img-content3 {
@@ -332,21 +343,7 @@ body {
     height: 100%; 
 }
 
-/* .img-content3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100%;
-    max-width: 350px; 
-    height: auto;
-}
 
-.img-size3 {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-} */
 
 .button3 {
     width: 100%;
@@ -571,12 +568,21 @@ body {
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
+.icon-rodape p {
+    display: flex; /* Usar flexbox para garantir o alinhamento entre o ícone e o texto */
+    align-items: center; /* Alinha verticalmente o ícone e o texto no centro */
+    margin: 5px 0; /* Espaçamento vertical entre os parágrafos */
+}
+
 .icon-rodape img {
-    width: 12%; /* Define a largura das imagens */
-    height: 20%; /* Mantém a proporção da altura em relação à largura */
-    margin-right: 2px; /* Espaçamento entre a imagem e o texto */
+    width: 46px; /* Ajusta a largura do ícone */
+    height: 46px; /* Mantém a proporção da altura */
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
     vertical-align: middle; /* Alinha a imagem verticalmente com o texto */
 }
+
+
+
 
 .rodape-direitos {
     background-color: black;
@@ -660,7 +666,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 20%;
     height: 100vh;
     background-color: green;
     z-index: 1;
@@ -816,7 +822,7 @@ body {
     }
 
     .img-size {
-        max-width: 300px; /* Ajusta o tamanho máximo da imagem para telas menores */
+        max-width: 450px; 
     }
 
     /* Mobile - Chips */
@@ -829,11 +835,10 @@ body {
     .img-content2 {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
-        grid-template-rows: repeat(2, 1fr); /* Duas linhas iguais */
-        gap: 10px; /* Espaçamento entre as imagens */
+        grid-template-rows: repeat(2, auto); /* Duas linhas: uma para as imagens e outra para os textos */
+        gap: 0px; /* Reduz o espaçamento entre as imagens e o texto */
         justify-items: center; /* Centraliza as imagens horizontalmente */
         align-items: center; /* Centraliza as imagens verticalmente */
-        height: 300px; /* Ajuste conforme necessário */
     }
 
     .img-content2 img {
@@ -842,22 +847,43 @@ body {
         object-fit: cover; /* Garante que a imagem preencha o espaço */
     }
 
-    .img-content2 img:nth-child(1) {
-        grid-column: 1; /* Coluna 1 */
-        grid-row: 2; /* Linha 2 */
-        align-self: end; /* Alinha a imagem na parte inferior */
+    .img-content2 p {
+        grid-column: span 1;
+        text-align: center;
+        margin: 0; /* Remove a margem */
+        padding-top: 1px; /* Aproxima o texto da imagem */
     }
 
-    .img-content2 img:nth-child(2) {
-        grid-column: 2; /* Coluna 2 (centro) */
-        grid-row: 1; /* Linha 1 (superior) */
+    .img-content2 img:nth-child(1) {
+        grid-column: 1; /* Coluna 1 */
+        grid-row: 1; /* Linha 1 */
+    }
+
+    .img-content2 p:nth-child(2) {
+        grid-column: 1; /* Coluna 1 */
+        grid-row: 2; /* Linha 2 */
     }
 
     .img-content2 img:nth-child(3) {
+        grid-column: 2; /* Coluna 2 */
+        grid-row: 1; /* Linha 1 */
+    }
+
+    .img-content2 p:nth-child(4) {
+        grid-column: 2; /* Coluna 2 */
+        grid-row: 2; /* Linha 2 */
+    }
+
+    .img-content2 img:nth-child(5) {
+        grid-column: 3; /* Coluna 3 */
+        grid-row: 1; /* Linha 1 */
+    }
+
+    .img-content2 p:nth-child(6) {
         grid-column: 3; /* Coluna 3 */
         grid-row: 2; /* Linha 2 */
-        align-self: end; /* Alinha a imagem na parte inferior */
     }
+
 
 
     /* Mobile - Contatatos */
@@ -870,6 +896,9 @@ body {
         max-width: 100%; /* Remover limite de largura em telas menores */
     }
 
+    .img-size3{
+        max-width: 300px; 
+    }
 
     /* -----------------------------------------------Arquivo home-menu---------------------------------------------------------- */
     .image-buttonHomeMenu img {
@@ -891,6 +920,17 @@ body {
         padding: 10px;
         border-radius: 0 30px 30px 0;
       }
+
+    
+    .right-sidebarHomeMenu {
+        width: 20%;
+    }
+
+    .image-buttonHomeMenu img {
+        width: 80%; /* Tamanho da imagem */
+        height: 50%; /* Tamanho da imagem */
+    }
+
 }
 
 .links.active {
@@ -918,26 +958,4 @@ body {
 
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
-}
-
-
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-    .img-content, .content {
-        flex: 1 1 100%; /* Ocupa 100% da largura da tela em dispositivos menores */
-        margin: 10px 0;
-    }
-
-    .img-size {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .content-text p {
-        font-size: 20px; /* Diminui o tamanho da fonte para melhor leitura em telas menores */
-    }
-
-    .container1{
-        height: auto;
-    }
 }
