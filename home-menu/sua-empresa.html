@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="../img/ZooChip - logo.png" type="image/x-icon">
     <title>Sua empresa</title>
 </head>
-<body>
+<body class="bodyEnterprise">
     <!-- Navbar -->
     <nav>
         <section class="nav-content">
@@ -29,21 +29,72 @@
     </nav>
 
     <!-- Principal -->
+    <div class="outer-containerEnterprise">
+        <!-- Seção para ações -->
+        <div class="left-sectionEnterprise">
+            <div class="actionsEnterprise">
+                <div class="profile-img-wrapper">
+                    <div class="profile-img-circle no-click" id="profileImgMainCircle">
+                        <!-- Aqui ficará o círculo vazio até que uma imagem seja escolhida -->
+                        <span id="noImageText">Foto de Perfil</span>
+                    </div>
+                </div>
+                <button class="buttonEnterprise" onclick="desconectar()">Desconectar</button>
+                <button class="buttonEnterprise" onclick="excluir()">Excluir</button>
+            </div>
+        </div>
+    
+        <!-- Contêiner verde para informações -->
+        <div class="containerEnterprise">
+            <!-- Seção de informações da conta -->
+            <div class="info-section">
+                <div class="account-details">
+                    <p>Nome da empresa: <span id="empresa">Minha Empresa</span></p>
+                    <p>Email: <span id="email">contato@minhaempresa.com</span></p>
+                    <p>Telefone: <span id="telefone">(11) 1234-5678</span></p>
+                    <p>Endereço: <span id="endereco">Rua Exemplo, 123, São Paulo, SP</span></p>
+                </div>
+                <button class="buttonEnterprise" onclick="toggleEdit()">Editar</button>
+            </div>
+    
+            <!-- Formulário de edição do perfil -->
+            <div class="edit-section" style="display: none;">
+                <form class="forms" id="editForm">
+                    <!-- Círculo de edição da imagem -->
+                    <div class="profile-img-wrapper">
+                        <div class="profile-img-circle clickable" onclick="document.getElementById('editImg').click();">
+                            <img id="profileImg" src="" alt="Foto de Perfil" class="profile-img" style="display: none;">
+                            <span id="editNoImageText">Clique para adicionar uma foto</span>
+                        </div>
+                    </div>
+                    <input type="file" id="editImg" name="editImg" accept="image/*" style="display: none;" onchange="previewImage(event)">
+                    <div class="form-groupEnterprise">
+                        <label for="editEmpresa">Nome da empresa:</label>
+                        <input type="text" id="editEmpresa" name="editEmpresa">
+                    </div>
+                    <div class="form-groupEnterprise">
+                        <label for="editEmail">Email:</label>
+                        <input type="email" id="editEmail" name="editEmail" onblur="validateEmail()">
+                    </div>
+                    <div class="form-groupEnterprise">
+                        <label for="editTelefone">Telefone:</label>
+                        <input type="text" id="editTelefone" name="editTelefone" oninput="applyPhoneMask(this)" maxlength="15">
+                    </div>
+                    <div class="form-groupEnterprise">
+                        <label for="editEndereco">Endereço:</label>
+                        <input type="text" id="editEndereco" name="editEndereco">
+                    </div>
+                    <button class="buttonEnterprise" type="button" onclick="saveChanges()">Salvar</button>
+                    <button class="buttonEnterprise" type="button" onclick="toggleEdit()">Cancelar</button>
+                </form>
+            </div>
+    
 
-    <main class="container2">
-        <article class="content-text2">
-          <h1>Nome da empresa</h1>
-          <h1>Email@gmail.com</h1>
-          <h1>(14) 00000-0000</h1>
-          <h1>Rua da Felicidade 1-48</h1>
-        </article>
+        </div>
+    </div>    
+    <script src="../script/sua-empresa.js"></script>
 
-    <section class="img-content2">
-      
-        <img class="img-size2" src="../img/Foto de perfil - icone.png" alt="1 imagem">    
-      
-    </section>
-  </main>
+
 
 </body>
 </html>
