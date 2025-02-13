@@ -1,0 +1,1374 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --nav-background: #55C278;
+    --container-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-background);
+    border-bottom: 1px solid #119100;
+    position: fixed;
+    top: 0; /* Adiciona a posição fixa no topo da página */
+    width: 100%;
+    z-index: 1000; /* Define um z-index alto para o navbar */
+    /* Ajuste a margem superior ou o padding do corpo, se necessário */
+}
+
+/* Ajuste o conteúdo da página para evitar que fique atrás do navbar */
+body {
+    margin-top: 60px; /* Ajuste o valor conforme necessário para o seu layout */
+}
+
+.nav-content {
+    display: flex;
+    /* flex-direction:row; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.nav-content .links {
+    list-style: none;
+    display: flex; 
+    /* flex-direction: row; */
+    column-gap: 20px;
+    margin-left: 30px;
+}
+
+.nav-content .links a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #119100;
+    font-weight: 500;
+}
+
+.nav-content .links a:hover {
+    text-decoration: underline;
+    color: #15b300;
+}
+
+.nav-logo img{
+    width: 50px;
+
+}
+
+/* Navbar Sing in - Sing */
+.aside-links ul {
+    display: flex;
+    /* flex-direction: row; */
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.aside-links ul a {
+    text-decoration: none;
+    color: #119100;
+    border: 1px solid #119100;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Index */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se movam em linha ou coluna conforme necessário */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
+    padding: 20px; /* Adiciona algum espaçamento ao redor */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    max-width: 600px; /* Define uma largura máxima para a seção de texto */
+}
+
+.content-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.content-text p {
+    font-size: 35px;
+    font-weight: 350;
+    margin: 10px 0;
+}
+
+/* Estilos para a imagem */
+.img-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    max-width: 100%;
+}
+
+.img-size {
+    width: 100%;
+    max-width: 350px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilização do botão */
+.button{
+    width: 100%;
+    font-weight: bold;
+    background-color: #55C278;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #34e025 4px 4px 0 0,#000 4px 4px 0 1px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.25rem; /* Font-size responsivo usando unidades rem */
+    line-height: 1.25rem;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
+    padding: 12px;
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+.button:hover{
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #34e025;
+    transition-delay: 0.1s;
+}
+
+
+/* Página de Chips */
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    max-width: 1200px; /* Limita a largura máxima do container */
+    margin: 0px auto; /* Centraliza o container horizontalmente e adiciona margem superior e inferior */
+    min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
+}
+
+.img-content1 {
+    background-color: #000;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 0px;
+    flex: 1 1 300px; /* Responsivo, ocupa o mínimo de 300px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-size1 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.content1 {
+    flex: 2 1 500px; /* Responsivo, ocupa o mínimo de 500px */
+    margin: 20px;
+}
+
+.content-text1 {
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #000;
+}
+
+.content-text1 p {
+    font-weight: 350;
+    font-size: 25px;
+}
+
+.content-text1 h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.button-align1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Página de Sobre nós */
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    max-width: 1200px; /* Limita a largura máxima do container */
+    margin: 0px auto; /* Centraliza o container horizontalmente e adiciona margem superior e inferior */
+    min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
+}
+
+.content-text2, .img-content2 {
+    flex: 1 1 45%;
+    min-width: 300px;
+    max-width: 900px;
+}
+
+.content-text2 {
+    background-color: #15b300;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.content-text2 p {
+    font-size: 25px;
+    padding: 15px;
+    color: black;
+    font-weight: 500;
+}
+
+.content-text2 h1 {
+    font-size: 40px;
+    padding: 30px;
+    color: black;
+    font-weight: 1000;
+}
+
+.img-content2 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.img-content2 p {
+    font-size: 20px; /* Ajusta o tamanho da fonte, se necessário */
+    font-weight: bold; /* Deixa o nome em negrito para destacar */
+    color: black; /* Define a cor do texto, se necessário */
+    height: 50px; 
+    margin-bottom: 20px; 
+    padding: 0%;
+}
+
+
+.img-size2 {
+    width: 100px; 
+    height: 100px; 
+    margin-bottom: 10px; 
+    padding: 5%;
+}
+
+
+
+/* Página de Contatos */
+.container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
+    text-align: center; /* Centraliza o texto dentro dos elementos */
+}
+
+.content3-text {
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: #559c4c;
+    margin: 10px auto; /* Centraliza horizontalmente */
+    border: 2px solid black;
+    box-sizing: border-box;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo internamente */
+    max-width: 400px; /* Define uma largura máxima para centralização */
+}
+
+.content3-text form {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os labels e inputs horizontalmente */
+}
+
+.forms-contatos input[type="text"],
+.forms-contatos input[type="email"],
+.forms-contatos input[type="tel"],
+.forms-contatos textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.content3-text label {
+    text-align: left; /* Alinha o texto à esquerda dentro do label */
+    width: 100%;
+    margin-bottom: 1px; /* Adiciona um pequeno espaço entre o label e o input */
+}
+
+.content3-text textarea{
+    resize: none;
+}
+
+.img-size3 {
+    width: 100%;
+    height: 100%;       
+    object-fit: cover; 
+    max-width: 400px; 
+}
+
+.img-content3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 10px;
+    flex-grow: 0.3; 
+    height: 100%; 
+}
+
+
+
+.button3 {
+    width: 100%;
+    font-weight: bold;
+    background-color: #55C278;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #34e025 4px 4px 0 0, #000 4px 4px 0 1px;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
+}
+
+.button3:hover {
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #34e025;
+}
+
+/* Página de Sign in */
+.login-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.login-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    font-weight: bold;
+    background-color: #55C278;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #34e025 4px 4px 0 0, #000 4px 4px 0 1px;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
+}
+
+.button:hover {
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #34e025;
+}
+
+.links-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.links-login a {
+    color: #55C278;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.links-login a:hover {
+    text-decoration: underline;
+}
+
+/* Página de Sign up */
+.register-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.register-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    font-weight: bold;
+    background-color: #55C278;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #34e025 4px 4px 0 0, #000 4px 4px 0 1px;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px;
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
+}
+
+.button:hover {
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #34e025;
+}
+
+.links-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.links-register a {
+    color: #55C278;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.links-register a:hover {
+    text-decoration: underline;
+}
+
+
+/* Rodapé */
+.rodape {
+    background-color: #49940d;
+    color: white;
+    width: 100%;
+    font-size: 22px;
+    font-family: helvetica;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.rodape p {
+    margin-bottom: 5px;
+}
+
+.rodape-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3 {
+    flex-basis: 30%; /* Cada div ocupará 30% do espaço disponível */
+    padding: 15px;
+    margin: 10px;
+}
+
+.rodape-div-1-coluna, .rodape-div-2-coluna, .rodape-div-3-coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape span {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.icon-rodape p {
+    display: flex; /* Usar flexbox para garantir o alinhamento entre o ícone e o texto */
+    align-items: center; /* Alinha verticalmente o ícone e o texto no centro */
+    margin: 5px 0; /* Espaçamento vertical entre os parágrafos */
+}
+
+.icon-rodape img {
+    width: 46px; /* Ajusta a largura do ícone */
+    height: 46px; /* Mantém a proporção da altura */
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    vertical-align: middle; /* Alinha a imagem verticalmente com o texto */
+}
+
+
+
+
+.rodape-direitos {
+    background-color: black;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+/*Mobile-Responsive Navbar*/
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* -----------------------------------------------Arquivo home-menu---------------------------------------------------------- */
+.mapaHomeMenu {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura da seção para a altura total da visualização */
+    width: 75%;
+    padding: 0 15px; /* Adicione padding se precisar de espaço nas laterais */
+    box-sizing: border-box;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Define uma largura máxima para o mapa */
+    padding-top: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.aside-perfil ul {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.aside-perfil ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #119100;
+    font-weight: 500;
+    padding: 4px;
+}
+
+.aside-perfil ul img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.right-sidebarHomeMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: green;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.right-sidebarHomeMenu .content {
+    text-align: center;
+    color: white;
+    margin-top: 20px; /* Adiciona espaço acima do conteúdo */
+    margin-bottom: 20px;
+    width: 100%; /* Garante que o conteúdo utilize toda a largura do contêiner */
+}
+
+.right-sidebarHomeMenu .content-textHomeMenu {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 20px; /* Espaçamento adicional se necessário */
+    
+}
+
+.right-sidebarHomeMenu .section {
+    margin-bottom: 30px;
+}
+
+.image-buttonHomeMenu {
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 0; /* Remove o padding do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.image-buttonHomeMenu img {
+
+    width: 50%; /* Tamanho da imagem */
+    height: 50%; /* Tamanho da imagem */
+    display: block;
+    margin: 0 auto 10px; /* Centraliza a imagem e adiciona margem abaixo */
+    background-color: transparent; /* Garante que o fundo da imagem seja transparente */
+}
+
+
+/* Seus animais */
+.right-sidebarLote {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: green;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 11px; /* Adiciona espaço superior para não sobrepor a navbar */
+    padding-bottom: 80px; /* Adiciona espaço superior para não sobrepor a navbar */
+
+    overflow-y: auto; /* Permite rolagem vertical */
+}
+
+.right-sidebarLote .content {
+    text-align: center;
+    color: white;
+    margin-top: 30px; /* Adiciona espaço acima do conteúdo */
+}
+
+.right-sidebarLote .content-textLote {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 20px; /* Espaçamento adicional se necessário */
+}
+
+.contentHomeMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    max-width: 600px;
+    overflow-y: auto; /* Adiciona rolagem se necessário */
+}
+
+.containerLote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.containerLote input[type="text"] {
+    width: 100%; /* Faz o input ocupar toda a largura disponível */
+    padding: 10px; /* Adiciona um pouco de espaço interno ao redor do texto */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para profundidade */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
+    outline: none; /* Remove o contorno padrão ao focar */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Adiciona uma transição suave para a borda e a sombra */
+}
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle input[type="file"] {
+    display: none;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.color-input {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.color-input::-webkit-color-swatch {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.text-input {
+    flex: 1;
+}
+
+.result-container {
+    margin-top: 20px; /* Espaçamento opcional para a área de resultados */
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Linha divisória na parte inferior */
+    position: relative;
+}
+
+.result-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ccc;
+}
+
+.result-item .color-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.result-item .info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1; 
+}
+
+.result-item .message {
+    flex: 1;
+    margin: 0; 
+}
+
+.divider {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-bottom: 10px; /* Espaçamento entre as linhas divisórias */
+    border: 0;
+    height: 1px;
+    background: #ddd; /* Cor da linha divisória */
+    margin: 10px 0; /* Espaçamento ao redor da linha */
+}
+
+.result-item:first-of-type {
+    border-top: 1px solid #ddd; /* Linha divisória no topo */
+    margin-top: 20px; /* Espaçamento acima do primeiro item */
+    padding-top: 10px; /* Espaçamento adicional no topo do primeiro item */
+}
+
+.mapaLote {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura da seção para a altura total da visualização */
+    width: 75%;
+    padding: 0 15px; /* Adicione padding se precisar de espaço nas laterais */
+    box-sizing: border-box;
+}
+
+  
+
+  /* Sua Empresa */
+  .bodyEnterprise {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+
+  .outer-containerEnterprise {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.left-sectionEnterprise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 30px;
+}
+
+
+.profile-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.no-click {
+    cursor: default;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#noImageText, #editNoImageText {
+    color: #bbb;
+    font-size: 16px;
+    text-align: center;
+}
+
+.actionsEnterprise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.buttonEnterprise {
+    background-color: #fff;
+    color: #28a745;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.buttonEnterprise:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+.containerEnterprise {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 700px;
+}
+
+.info-section {
+    flex: 1;
+    text-align: center; 
+}
+
+.account-details p{
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 30px; 
+}
+
+.edit-section {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center; 
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-groupEnterprise {
+    font-size: large;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 80%;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+@media (max-width: 999px) {
+    body {
+    overflow-x: hidden;
+    }
+    .links {
+    position: fixed;
+    top: 0vh;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #55C278;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    }
+    .links li {
+    margin-left: 0;
+    opacity: 0;
+    }
+    .mobile-menu {
+    display: block;
+    }
+    .img-content, .content {
+        flex: 1 1 100%; /* Ocupa 100% da largura da tela em dispositivos menores */
+        margin: 10px 0;
+    }
+
+    .content {
+        max-width: 90%; /* Ajusta a largura máxima para telas menores */
+    }
+
+    .content-text h1 {
+        font-size: 2rem; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .content-text p {
+        font-size: 20px; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .button {
+        font-size: 1rem; /* Reduz o tamanho da fonte do botão para telas menores */
+    }
+
+    .img-size {
+        max-width: 450px; 
+    }
+
+    /* Mobile - Chips */
+    .container1 {
+        height: auto;
+    }
+
+
+    /* Mobile - Sobre nós */
+    .img-content2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Três colunas iguais */
+        grid-template-rows: repeat(2, auto); /* Duas linhas: uma para as imagens e outra para os textos */
+        gap: 0px; /* Reduz o espaçamento entre as imagens e o texto */
+        justify-items: center; /* Centraliza as imagens horizontalmente */
+        align-items: center; /* Centraliza as imagens verticalmente */
+    }
+
+    .img-content2 img {
+        width: 80px; /* Ajuste o tamanho conforme necessário */
+        height: 80px; /* Ajuste o tamanho conforme necessário */
+        object-fit: cover; /* Garante que a imagem preencha o espaço */
+    }
+
+    .img-content2 p {
+        grid-column: span 1;
+        text-align: center;
+        margin: 0; /* Remove a margem */
+        padding-top: 1px; /* Aproxima o texto da imagem */
+    }
+
+    .img-content2 img:nth-child(1) {
+        grid-column: 1; /* Coluna 1 */
+        grid-row: 1; /* Linha 1 */
+    }
+
+    .img-content2 p:nth-child(2) {
+        grid-column: 1; /* Coluna 1 */
+        grid-row: 2; /* Linha 2 */
+    }
+
+    .img-content2 img:nth-child(3) {
+        grid-column: 2; /* Coluna 2 */
+        grid-row: 1; /* Linha 1 */
+    }
+
+    .img-content2 p:nth-child(4) {
+        grid-column: 2; /* Coluna 2 */
+        grid-row: 2; /* Linha 2 */
+    }
+
+    .img-content2 img:nth-child(5) {
+        grid-column: 3; /* Coluna 3 */
+        grid-row: 1; /* Linha 1 */
+    }
+
+    .img-content2 p:nth-child(6) {
+        grid-column: 3; /* Coluna 3 */
+        grid-row: 2; /* Linha 2 */
+    }
+
+
+
+    /* Mobile - Contatatos */
+    .container3 {
+        flex-direction: column; /* Muda para layout de coluna em telas menores */
+        gap: 30px; /* Aumenta o espaço entre os elementos em telas menores */
+    }
+
+    .content3-text, .img-content3 {
+        max-width: 100%; /* Remover limite de largura em telas menores */
+    }
+
+    .img-size3{
+        max-width: 300px; 
+    }
+
+    /* -----------------------------------------------Arquivo home-menu---------------------------------------------------------- */
+    /* Inicio */
+    .right-sidebarHomeMenu {
+        width: 100%; /* Faz com que a aba ocupe toda a largura da tela */
+        height: auto; /* Ajusta a altura conforme o conteúdo */
+        bottom: 0; /* Posiciona a aba na parte inferior da tela */
+        top: auto; /* Remove o posicionamento no topo */
+        flex-direction: row; /* Alinha as imagens horizontalmente */
+        justify-content: space-around; /* Espaça as imagens igualmente */
+        padding: 10px 0; /* Adiciona padding superior e inferior para espaçamento */
+    }
+
+
+    .right-sidebarHomeMenu .content {
+        flex-direction: row; /* Alinha as imagens horizontalmente */
+        justify-content: space-around; /* Espaça as imagens igualmente */
+    }
+
+    .right-sidebarHomeMenu .section {
+        flex: none; /* Remove o comportamento de flex item */
+        margin: 10px; /* Adiciona uma margem para espaçamento */
+    }
+
+    .image-buttonHomeMenu img {
+        width: 100px; /* Define um tamanho fixo para as imagens */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .mapaHomeMenu{
+        width: 90%; /* O mapa ocupará 90% da largura da tela */
+        height: auto; /* A altura será ajustada proporcionalmente */
+        margin: 0 auto; /* Centraliza o mapa */
+        margin-bottom: 20px;
+        margin-top: 110px;
+    }
+
+    /* Sua Empresa */
+    .bodyEnterprise {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .outer-containerEnterprise {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 180px; /* Ajuste conforme a altura da sua navbar */
+    }
+
+    .left-sectionEnterprise {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-img-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .profile-img-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .buttonEnterprise {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .containerEnterprise {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box; /* Inclui o padding no cálculo da largura total */
+    }
+
+    .form-groupEnterprise {
+        width: 70%;
+    }
+
+    form button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+.links.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+    opacity: 0;
+    transform: translateX(50px);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+/* -----------------------------------------------Arquivo home-menu---------------------------------------------------------- */
+@media (max-width: 1520px) {
+
+    /* Seus animais */
+    .right-sidebarLote {
+        width: 100%; /* A aba verde ocupará toda a largura da tela */
+        height: auto; /* Altura ajustada para o conteúdo */
+        position: relative; /* Para não sobrepor outros elementos */
+    }
+
+
+    .content-textHomeMenu{
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;       
+    }
+
+    .containerHomeMenu {
+        flex-direction: column;
+        align-items: center;
+        width: 90%; /* Ocupa 90% da largura da tela */
+        margin: 20px auto; /* Margem automática para centralizar */
+    }
+
+    .circle {
+        width: 80px; /* Reduz tamanho do círculo em telas menores */
+        height: 80px;
+    }
+
+    .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .color-input {
+        width: 50px; /* Reduz tamanho do seletor de cores */
+        height: 50px;
+    }
+
+    .text-input {
+        width: 80%; /* Ajusta o tamanho do campo de texto */
+        padding: 10px;
+    }
+
+    .result {
+        width: 100%; /* A lista de resultados ocupará toda a largura disponível */
+    }
+
+    .result-item {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center;
+    }
+
+    .result-item img {
+        width: 80px; /* Reduz tamanho da imagem nos resultados */
+        height: 80px;
+    }
+
+    .result-item .color-circle {
+        width: 40px; /* Reduz tamanho do círculo de cor */
+        height: 40px;
+    }
+
+    .result-item .message {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .mapaLote{
+        width: 90%; /* O mapa ocupará 90% da largura da tela */
+        height: auto; /* A altura será ajustada proporcionalmente */
+        margin: 0 auto; /* Centraliza o mapa */
+        margin-bottom: 20px;
+        margin-top: 110px;
+    }
+}

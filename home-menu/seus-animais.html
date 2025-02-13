@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/ZooChip - logo.png" type="image/x-icon">
+    <title>Seus Animais</title>
+</head>
+<body class="bodyEnterprise">
+    <!-- Navbar -->
+    <nav>
+        <section class="nav-content">
+            <figure class="nav-logo">
+                <a href="inicio.html"><img src="../img/ZooChip - logo.png" alt=""></a>
+            </figure>
+        </section>
+
+        <aside class="aside-perfil">
+            <ul>
+                <li>
+                    <a href="sua-empresa.html">
+                        <img src="../img/Foto de perfil - icone.png" alt="Foto de Perfil da Empresa">
+                        <h1>Sua Empresa</h1>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </nav>
+
+    <!-- Principal -->
+    <div class="outer-containerEnterprise">
+        <!-- Seção para ações -->
+        <div class="left-sectionEnterprise">
+            <div class="actionsEnterprise">
+                <div class="profile-img-wrapper">
+                    <div class="profile-img-circle no-click" id="profileImgMainCircle">
+                        <!-- Aqui ficará o círculo vazio até que uma imagem seja escolhida -->
+                        <span id="noImageText">Foto de Perfil</span>
+                    </div>
+                </div>
+                <button class="buttonEnterprise" onclick="localizar()">Localização</button>
+                <button class="buttonEnterprise" onclick="toggleEdit()">Editar</button>
+            </div>
+        </div>
+    
+        <!-- Contêiner verde para informações -->
+        <div class="containerEnterprise">
+            <!-- Seção de informações da conta -->
+            <div class="info-section">
+                <div class="account-details">
+                    <p>informações Básicas:<span id="info"></span></p>
+                    <p>Id: <span id="id">123</span></p>
+                    <p>Lote: <span id="lote">203</span></p>
+                    <p>Idade: <span id="idade"></span></p>
+                    <p>Raça: <span id="raca"></span></p>
+                    <p>Origem: <span id="origem"></span></p>
+                    <p>Última pesagem: <span id="ultimapesagem"></span></p>
+                    <p>Especificação: <span id="especificacao"></span></p>
+                </div>
+            </div>
+    
+            <!-- Formulário de edição do perfil -->
+            <div class="edit-section" style="display: none;">
+                <form class="forms" id="editForm">
+                    <!-- Círculo de edição da imagem -->
+                    <div class="profile-img-wrapper">
+                        <div class="profile-img-circle clickable" onclick="document.getElementById('editImg').click();">
+                            <img id="profileImg" src="" alt="Foto de Perfil" class="profile-img" style="display: none;">
+                            <span id="editNoImageText">Clique para adicionar uma foto</span>
+                        </div>
+                    </div>
+                    <input type="file" id="editImg" name="editImg" accept="image/*" style="display: none;" onchange="previewImage(event)">
+                    <div class="form-groupEnterprise">
+                        <label for="editIdade">Idade:</label>
+                        <input type="data" id="editIdade" name="editIdade">
+                    </div>
+                    <div class="form-groupEnterprise">
+                        <label for="editRaca">Raça:</label>
+                        <input type="raca" id="editRaca" name="editRaca" onblur="validateEmail()">
+                    </div>
+                    <div class="form-groupEnterprise">
+                        <label for="editOrigem">Origem:</label>
+                        <input type="text" id="editOrigem" name="editOrigem">
+                    </div>
+                    <div class="form-groupEnterprise">
+                        <label for="editUltimaPesagem">Última Pesagem:</label>
+                        <input type="text" id="editUltimaPesagem" name="editUltimaPesagem">
+                    </div>
+                    <div class="form-groupEnterprise">
+                        <label for="editEspecificacao">Especificação:</label>
+                        <input type="text" id="editEspecificacao" name="editEspecificacao">
+                    </div>
+                    <button class="buttonEnterprise" type="button" onclick="saveChanges()">Salvar</button>
+                    <button class="buttonEnterprise" type="button" onclick="toggleEdit()">Cancelar</button>
+                </form>
+            </div>
+    
+        </div>
+    </div>    
+    <script src="../script/seus-animais.js"></script>
+
+
+
+</body>
+</html>
