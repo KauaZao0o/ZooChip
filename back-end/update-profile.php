@@ -27,7 +27,7 @@ if (isset($_POST['editEmpresa'], $_POST['editEmail'], $_POST['editEndereco'])) {
     if (isset($_FILES['editImg']) && $_FILES['editImg']['error'] == 0) {
         $imagem_nome = $_FILES['editImg']['name'];
         $imagem_tmp = $_FILES['editImg']['tmp_name'];
-        $imagem_destino = "../img/" . basename($imagem_nome);
+        $imagem_destino = "../assets/img/" . basename($imagem_nome);
 
         // move a imagem para o diretório de uploads
         if (move_uploaded_file($imagem_tmp, $imagem_destino)) {

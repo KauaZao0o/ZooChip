@@ -42,7 +42,7 @@
         exit();
     }
 
-    $fotoPerfil = !empty($cliente_info['imagem']) ? $cliente_info['imagem'] : '../img/Foto de perfil - icone.png'; // Caminho da imagem padrão
+    $fotoPerfil = !empty($cliente_info['imagem']) ? $cliente_info['imagem'] : '../assets/img/Foto de perfil - icone.png'; // Caminho da imagem padrão
 
     // fecha a conexão
     $stmt->close();
@@ -54,8 +54,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
-    <link rel="shortcut icon" href="../img/ZooChip - logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css?v=<?php echo time(); ?>">
+    <link rel="shortcut icon" href="../assets/img/ZooChip - logo.png" type="image/x-icon">
     <title>Perfil da Empresa</title>
 </head>
 <body class="bodyEnterprise">
@@ -64,7 +64,7 @@
     <nav>
         <section class="nav-content">
             <figure class="nav-logo">
-                <a href="inicio.html"><img src="../img/ZooChip - logo.png" alt=""></a>
+                <a href="inicio.html"><img src="../assets/img/ZooChip - logo.png" alt=""></a>
             </figure>
         </section>
 
@@ -72,7 +72,7 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="../img/Foto de perfil - icone.png" alt="Foto de Perfil da Empresa">
+                        <img src="../assets/img/Foto de perfil - icone.png" alt="Foto de Perfil da Empresa">
                         <h1><?php echo htmlspecialchars($_SESSION['user_name']); ?></h1> <!-- exibe o nome da empresa -->
                     </a>
                 </li>

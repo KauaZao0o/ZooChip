@@ -33,7 +33,7 @@
         if (isset($_FILES['lote_imagem']) && $_FILES['lote_imagem']['error'] == 0) {
             $imagem_nome = $_FILES['lote_imagem']['name'];
             $imagem_tmp = $_FILES['lote_imagem']['tmp_name'];
-            $imagem_destino = "../img/" . $imagem_nome;
+            $imagem_destino = "../assets/img/" . $imagem_nome;
 
             // move a imagem para o diretório de uploads
             move_uploaded_file($imagem_tmp, $imagem_destino);
@@ -73,8 +73,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/ZooChip - logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/img/ZooChip - logo.png" type="image/x-icon">
     <title>Lotes</title>
 </head>
 <body>
@@ -82,7 +82,7 @@
     <nav>
         <section class="nav-content">
             <figure class="nav-logo">
-                <a href="inicio.html"><img src="../img/ZooChip - logo.png" alt=""></a>
+                <a href="inicio.html"><img src="../assets/img/ZooChip - logo.png" alt=""></a>
             </figure>
         </section>
 
@@ -90,7 +90,7 @@
             <ul>
                 <li>
                     <a href="profile.php">
-                        <img src="../img/Foto de perfil - icone.png" alt="Foto de Perfil da Empresa">
+                        <img src="../assets/img/Foto de perfil - icone.png" alt="Foto de Perfil da Empresa">
                         <h1>Perfil</h1>
                     </a>
                 </li>
@@ -145,7 +145,7 @@
         </div>
     </div>
 
-<script src="../script/adicionar_lote.js"></script>
+<script src="../assets/script/adicionar_lote.js"></script>
 
 </body>
 </html>
