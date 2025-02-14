@@ -57,8 +57,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/ZooChip - logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/img/ZooChip - logo.png" type="image/x-icon">
     <title>Entrar</title>
 </head>
 <body>
@@ -85,7 +85,7 @@
     <nav>
       <section class="nav-content">
         <figure class="nav-logo">
-          <a href="../index.html"><img src="../img/ZooChip - logo.png" alt=""></a>
+          <a href="../index.html"><img src="../assets/img/ZooChip - logo.png" alt=""></a>
         </figure>
         <div class="mobile-menu">
           <div class="line1"></div>
@@ -100,7 +100,7 @@
           </ul>
         </section>
         <!-- barra hamburguer -->
-        <script src="../script/script.js"></script>
+        <script src="../assets/script/script.js"></script>
       </section>
 
       <aside class="aside-links">

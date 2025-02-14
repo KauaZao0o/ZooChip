@@ -42,8 +42,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/ZooChip - logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/img/ZooChip - logo.png" type="image/x-icon">
     <title>Contatos</title>
 </head>
 <body>
@@ -84,7 +84,7 @@
     <nav>
       <section class="nav-content">
         <figure class="nav-logo">
-          <a href="../index.html"><img src="../img/ZooChip - logo.png" alt=""></a>
+          <a href="../index.html"><img src="../assets/img/ZooChip - logo.png" alt=""></a>
         </figure>
       <div class="mobile-menu">
         <div class="line1"></div>
@@ -99,7 +99,7 @@
           </ul>
         </section>
           <!-- barra hamburguer -->
-          <script src="../script/script.js"></script>
+          <script src="../assets/script/script.js"></script>
       </section>
 
       <aside class="aside-links">
@@ -135,7 +135,7 @@
 
       <section class="img-content3">
         <figure>
-          <img class="img-size3" src="../img/zoochip2024_qr.png" alt="Imagem">         
+          <img class="img-size3" src="../assets/img/zoochip2024_qr.png" alt="Imagem">         
         </figure>
       </section>
 
@@ -161,8 +161,8 @@
               <!-- elemento -->
               <span>Contate-nos</span>
                 <article class="icon-rodape">
-                  <p><img src="../img/Instagram - icon.png" alt="icon de instagram"><a href="https://www.instagram.com/zoochip2024/" target="_blank"> zoochip2024</a></p>
-                  <p><img src="../img/Email - icon.png" alt="icon de email"> ZooChip2024@gmail.com</p>
+                  <p><img src="../assets/img/Instagram - icon.png" alt="icon de instagram"><a href="https://www.instagram.com/zoochip2024/" target="_blank"> zoochip2024</a></p>
+                  <p><img src="../assets/img/Email - icon.png" alt="icon de email"> ZooChip2024@gmail.com</p>
               </article>
           </div>
       </div>
@@ -171,7 +171,7 @@
         <div class="rodape-div-3-coluna">            
             <!-- elemento -->
               <figure>
-                <img class="img-size" src="../img/Footer - logo.png" alt="Imagem">         
+                <img class="img-size" src="../assets/img/Footer - logo.png" alt="Imagem">         
               </figure>
         </div>
     </div>
