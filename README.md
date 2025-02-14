@@ -2,7 +2,7 @@
 
 O **ZooChip** é um sistema integrado de gerenciamento de animais, desenvolvido para facilitar o controle e monitoramento de lotes e animais por meio de chips. O projeto utiliza tecnologias como **PHP**, **MySQL**, **HTML**, **CSS** e **JavaScript** para fornecer uma solução completa e eficiente.
 
-![ZooChip Logo](img/ZooChip%20-%20logo.png)
+![ZooChip Logo](assets/img/ZooChip%20-%20logo.png)
 
 ## Tecnologias Utilizadas
 
